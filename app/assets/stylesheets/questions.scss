@@ -1,0 +1,40 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$blue: #579BD5;
+$pale_grey: #DDDDDD;
+
+@mixin border {
+  border-left: 5px solid $pale_grey;
+  padding: 8px 16px;
+  margin: 16px 0;
+  line-height: 2;
+}
+
+.container {
+  padding-top: 16px;
+}
+
+.question-div, .answer-div {
+  @include border;
+  p {
+    margin: 0;
+  }
+  .answer {
+    font-weight: bold;
+  }
+}
+
+
+.person {
+  font-style: italic;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $blue;
+  &:hover {
+    color: $blue;
+    opacity: 0.5;
+  }
+}
